@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./font/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.leftImg {
+    background-image: url(./img/background.avif);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    color: white;
+    flex-grow: 1;
+    flex-basis: 70vw;
+    min-width: 300px;
+}
+
+.credit {
+    text-align: center;
+}
+
+a { 
+    color: inherit; 
+} 
+
+.odinLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.odin {
+    margin: 20px;
+}
+
+.bannerText {
+    font-family: "Norse Bold";
+    font-size: 6rem;
+    margin: 0;
+}
+
+.paragraph {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 50px;
+}
+
+#theForm {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 38px;
+}
+
+.fill {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+legend {
+    padding: 10px 0 50px 50px;
+    font-size: 1.5rem;
+}
+
+.right {
+    background-color: rgb(245, 247, 248);
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border: 1px solid rgb(216, 213, 213);
+}
+
+input:hover {
+    border: 1px solid blue;
+}
+
+input:focus {
+    border: 1px solid rgb(2, 2, 63);
+}
+
+button {
+    border-radius: 5px;
+    border: 1px;
+    background-color: rgb(11, 174, 44);
+    color: white;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 20px 0 20px 50px;
+    box-shadow: rgba(0,0,0,0.8) 0px 0 7px;
+}
+
+.lastParagraph {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#login {
+    color: rgb(11, 174, 44);
+    text-decoration: none;
+}
+
+.asterisk {
+    color: red;
+}
+
+input[type = "email"]:invalid {
+    border: 1px red solid;
+}
+
+input[type = "tel"]:invalid {
+    border: 1px red solid;
+}
