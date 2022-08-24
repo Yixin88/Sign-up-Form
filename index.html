@@ -29,38 +29,41 @@
                     <div class="fill">
                         <div>
                             <label for="firstName">First Name <span class="asterisk">*</span></label><br>
-                            <input type="text" name="firstName" id="firstName" required>
+                            <input class="validation" type="text" name="firstName" id="firstName" required>
                         </div>
                         <div>
                             <label for="lastName">Last Name <span class="asterisk">*</span></label><br>
-                            <input type="text" name="lastName" id="lastName" required>
+                            <input class="validation"type="text" name="lastName" id="lastName" required>
                         </div>
                     </div>
                     <div class="fill">
                         <div>
                             <label for="email">Email <span class="asterisk">*</span></label><br>
-                            <input type="email" name="email" id="email">
+                            <input class="validation" type="email" name="email" id="email" placeholder=" " required>
                         </div>
                         <div>
                             <label for="number">Phone Number</label><br>
-                            <input type="tel" name="number" id="number" pattern="[0-9]+">
+                            <input class="validation" type="tel" name="number" id="number" pattern="[0-9]+" minlength="11" maxlength="11" placeholder=" ">
                         </div>
                     </div>
                     <div class="fill">
                         <div>
                             <label for="password">Password <span class="asterisk">*</span></label><br>
-                            <input type="password" name="password" id="password">
+                            <input class="validation pass" id="password" type="password" name="password" id="password" minlength="5" placeholder=" " required>
                         </div>
                         <div>
                             <label for="conPassword">Confirm Password <span class="asterisk">*</span></label><br>
-                            <input type="password" name="conPassword" id="conPassword">
+                            <input id="conPassword" type="password" name="conPassword" id="conPassword" minlength="5" required>
+                            <span id="message"></span>
                         </div>
                     </div>
                 </section>
             </div>
-            <button type="submit">Submit</button>
+            <button id="submitButton" type="submit">Submit</button>
+            
         </form>
         <p class="lastParagraph">Already have an account? <a href="#" id="login">Log in</a></p>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
